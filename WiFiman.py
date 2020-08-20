@@ -1,10 +1,9 @@
 import os
+
 from appium import webdriver
-import time
-import numpy
 from appium.webdriver.common.mobileby import MobileBy
-from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
 
 
 class WiFiman:
@@ -20,8 +19,7 @@ class WiFiman:
                 'platformVersion': '9.0',
                 'deviceName': 'Pixel 2',
                 'noReset': 'True'
-            }
-        )
+            })
 
     def getSpeed(self):
         SSID = WebDriverWait(self.driver, 5).until(

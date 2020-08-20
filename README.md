@@ -4,3 +4,5 @@ _Provide your own machine's filepath to the WiFiman APK under the declaration of
 This project was created in pycharm with pytest as the default test runner under Settings -> Python Integrated Tools.
 
 Line 47 in WiFiman.py deliberately breaks the while loop after proving tests can occur a minute apart so that the pytest can be marked as passed.
+
+Mandatory tests are in test.py, optional tests are in test_optional.py.
