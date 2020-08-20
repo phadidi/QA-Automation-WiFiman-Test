@@ -1,6 +1,7 @@
 import os
 from appium import webdriver
 import time
+import numpy
 
 
 class WiFiman:
@@ -19,11 +20,11 @@ class WiFiman:
             }
         )
 
-    def getSpeedPerMinute(self):
-        SSID = self.driver.find_element_by_android_uiautomator('new UiSelector().text("AndroidWifi")')
-
-    # if (SSID): self.driver.implicitly_wait(60) SpeedTest = self.driver.find_element_by_android_uiautomator(
-    # '//android.widget.FrameLayout[@content-desc="Speed Test"]') SpeedTest()
+    def getSpeed(self):
+        # self.driver.click(TODO: find id of SSID if available, or exit if none found
+        # self.driver.click(TODO: find id of Speed Test -> Start Test soft button)
+        # print(status depending on if SSID was found or not)
+        return True
 
     def tearDown(self):
         self.driver.quit()
