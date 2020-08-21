@@ -1,10 +1,7 @@
 import unittest
 
 from appium import webdriver
-from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.wait import WebDriverWait
 
 driver = webdriver.Remote(
     command_executor='http://127.0.0.1:4723/wd/hub',
@@ -26,5 +23,9 @@ class test_optional(unittest.TestCase):
         searchBar = driver.find_element_by_name('q')
         searchBar.send_keys("Tenet Movie Warner Brothers")
         searchBar.send_keys(Keys.RETURN)
-        plot = str(driver.find_element_by_xpath("//span[contains(@class, 'kno-rdesc')]").text)
+        driver.implicitly_wait(5)
+        kno_rdesc = driver.find_element_by_class_name("kno-rdesc").text
+        # remove "Description\n" from plot
+        description = kno_rdesc.split("Description\n")
+        plot = description[1]
         assert plot == "Tenet is an upcoming spy film written, produced, and directed by Christopher Nolan. It is a co-production between the United Kingdom and United States, and stars John David Washington, Robert Pattinson, Elizabeth Debicki, Dimple Kapadia, Michael Caine, and Kenneth Branagh."

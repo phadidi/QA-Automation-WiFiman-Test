@@ -53,13 +53,9 @@ class WiFiman:
                 TestAgain.click()
                 assert True
                 keepTesting = False # stopped testing here after proving tests can run 1 minute apart
-
         else:
             print("No SSID found")
             assert False
-        # self.driver.click(TODO: find id of SSID if available, or exit if none found
-        # self.driver.click(TODO: find id of Speed Test -> Start Test soft button)
-        # print(status depending on if SSID was found or not)
         return True
 
     def tearDown(self):
