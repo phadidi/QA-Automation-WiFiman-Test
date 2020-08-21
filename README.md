@@ -15,6 +15,6 @@ _Tenet is an upcoming spy film written, produced, and directed by Christopher No
 
 to
 
-_Tenet is an upcoming spy film written and directed by Christopher Nolan, who produced it with Emma Thomas. A co-production between the United Kingdom and United States, it stars John David Washington, Robert Pattinson, Elizabeth Debicki, Dimple Kapadia, Michael Caine, and Kenneth Branagh._
+_Tenet is an upcoming spy film written and directed by Christopher Nolan, **who produced it with Emma Thomas. A** co-production between the United Kingdom and United States, it stars John David Washington, Robert Pattinson, Elizabeth Debicki, Dimple Kapadia, Michael Caine, and Kenneth Branagh._
 
 Therefore, I could not assert the plot matches the original requirements given to me for the test although I was able to successfully retrieve the new plot element in its place.
