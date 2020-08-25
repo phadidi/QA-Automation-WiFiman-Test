@@ -1,5 +1,5 @@
 # Initialization Instructions
-_Before running the WiFiman, Provide your own machine's filepath to the WiFiman APK under the declaration of the app argument in test.py line 9._
+_Before running the WiFiman, provide your own machine's filepath to the WiFiman APK under the declaration of the app argument in test.py line 11._
 
 # Project Notes
 This project was created in pycharm with pytest as the default test runner under Settings -> Python Integrated Tools.
